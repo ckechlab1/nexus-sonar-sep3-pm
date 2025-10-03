@@ -65,7 +65,7 @@ pipeline {
                 dir('calculator') {
                 echo 'Nexus upload'
                 nexusArtifactUploader(
-                    credentialsId: 'nexus-jenkins',
+                    credentialsId: 'nexus',
                     groupId: "${groupId}",
                     nexusUrl: 'ubiquitous-garbanzo-wrvjxxx49xxpc5wrp.github.dev-8081.app.github.dev',
                     nexusVersion: 'nexus3',
