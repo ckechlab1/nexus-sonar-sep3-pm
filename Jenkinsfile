@@ -2,10 +2,10 @@
 pipeline {
     agent any
 
-    // triggers {
-    //     // Polls the SCM every minute using cron syntax:
-    //     pollSCM('* * * * *') 
-    // }
+    triggers {
+        // Polls the SCM every minute using cron syntax:
+        pollSCM('* * * * *') 
+    }
     
     tools {
         maven "M3"
@@ -67,7 +67,7 @@ pipeline {
                 nexusArtifactUploader(
                     credentialsId: 'nexus-jenkins',
                     groupId: "${groupId}",
-                    nexusUrl: 'YOUR_GITHUB_NEXUS_URL-8081.app.github.dev',
+                    nexusUrl: 'ubiquitous-garbanzo-wrvjxxx49xxpc5wrp.github.dev-8081.app.github.dev',
                     nexusVersion: 'nexus3',
                     protocol: 'https',
                     repository: 'echop',
