@@ -1,38 +1,35 @@
 package com.echios;
-import com.echios.calculator.Calculator; // Import the Calculator class
 
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Module test 2" );
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-        // Use the Calculator class
-        // Calculator calc = new Calculator();
-        // double result = calc.add(5, 3);
+import com.echios.calculator.Calculator;
+
+public class App {
+
+    private static final Logger LOGGER = Logger.getLogger(App.class.getName());
+
+    public static void main(String[] args) {
+
         double result;
 
         result = compute(5, 3, "+");
-        System.out.println("The result of 5 + 3 is: " + result);
+        LOGGER.log(Level.INFO, "Module test-v9: {0}", result);
 
-        // double difference = calc.subtract(10, 4);
         result = compute(10, 4, "-");
-        System.out.println("10 - 4 = " + result);
+        LOGGER.log(Level.INFO, "Module test-v9: {0}", result);
+
     }
 
     public static double compute(double n1, double n2, String op) {
         Calculator calc = new Calculator();
         double result = 0;
 
-        System.out.println("Started compute");
-
         if (op.equals("+")) {
             result = calc.add(n1, n2);
         } else if (op.equals("-")) {
             result = calc.subtract(n1, n2);
         }
-
-        System.out.println("result is: " + result);
 
         return result;
     }
