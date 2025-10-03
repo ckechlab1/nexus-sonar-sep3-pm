@@ -67,7 +67,7 @@ pipeline {
                 nexusArtifactUploader(
                     credentialsId: 'nexus',
                     groupId: "${groupId}",
-                    nexusUrl: 'ubiquitous-garbanzo-wrvjxxx49xxpc5wrp.github.dev-8081.app.github.dev',
+                    nexusUrl: 'ubiquitous-garbanzo-wrvjxxx49xxpc5wrp-8081.app.github.dev',
                     nexusVersion: 'nexus3',
                     protocol: 'https',
                     repository: 'echop',
