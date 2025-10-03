@@ -52,7 +52,7 @@ pipeline {
             steps {
                 dir('calculator') {
                     script {
-                        withSonarQubeEnv(credentialsId: 'sonar-scan') {
+                        withSonarQubeEnv(credentialsId: 'sonar') {
                         sh 'mvn clean package sonar:sonar -Dsonar.coverage.exclusions=**/*'
                         }
                     }
