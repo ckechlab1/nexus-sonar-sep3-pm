@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.echios</groupId>
+  <artifactId>calculator-module</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>calculator-module</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <release>17</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <distributionManagement>
+      <repository>
+          <id>nexus-releases</id>
+          <!-- Use your nexus release URL here -->
+          <url>https://ubiquitous-garbanzo-wrvjxxx49xxpc5wrp-8081.app.github.dev/repository/echart/</url>
+      </repository>
+      <snapshotRepository>
+          <id>nexus-snapshots</id>
+          <!-- Use your nexus snapshot URL here -->
+          <url>https://ubiquitous-garbanzo-wrvjxxx49xxpc5wrp-8081.app.github.dev/repository/echop/</url>
+      </snapshotRepository>
+  </distributionManagement>
+
+</project>

@@ -1,0 +1,6 @@
+projectKey=com.echios:calculator
+serverUrl=https://ubiquitous-garbanzo-wrvjxxx49xxpc5wrp-9000.app.github.dev
+serverVersion=25.9.0.112764
+dashboardUrl=https://ubiquitous-garbanzo-wrvjxxx49xxpc5wrp-9000.app.github.dev/dashboard?id=com.echios%3Acalculator
+ceTaskId=c2ee30ae-a5c7-4794-970d-173b3c4d04ee
+ceTaskUrl=https://ubiquitous-garbanzo-wrvjxxx49xxpc5wrp-9000.app.github.dev/api/ce/task?id=c2ee30ae-a5c7-4794-970d-173b3c4d04ee

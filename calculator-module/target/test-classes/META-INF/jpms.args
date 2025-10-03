@@ -1,0 +1,4 @@
+--patch-module
+com.echios.calculator=_
+--add-reads
+com.echios.calculator=ALL-UNNAMED
